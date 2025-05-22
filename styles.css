@@ -16,14 +16,21 @@ body{
 
 .card{
     background: hsl(0, 0%, 12%);
-    border-radius: 5%;
-;
+    border-radius: 10px;
+    padding: 2.5rem;
+    /* min-width: 22rem; */
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
 }
+
+
 .profile{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* min-width: 90%; */
 }
 
 .profile-pic{
@@ -39,37 +46,53 @@ body{
 }
 
 .profile-name{
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .profile-loc{
     color: hsl(75, 94%, 57%);
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
 }
 
 .profile-des{
     font-size: 1rem;
     font-weight: 400;
+    margin-bottom: 1.5rem;
 }
 
 .content{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
 }
 
-.content div{
-    padding: 10px;
+.link-button {
+    display: block;
+    padding: 15px;
     text-align: center;
-
+    background: hsl(0, 0%, 20%);
+    border-radius: 10px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
 }
 
-
+.link-button:hover,
+.link-button:focus {
+    background: hsl(0, 0%, 25%);
+    color: hsl(75, 94%, 57%);
+    outline: 2px solid hsl(75, 94%, 57%);
+    outline-offset: 4px;
+}
 
 .attribution {
     font-size: 11px; text-align: center; 
 }
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(75, 94%, 57%); 
 }
